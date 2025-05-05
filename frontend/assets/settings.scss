@@ -1,0 +1,11 @@
+$family: "Rubik", sans-serif;
+
+@use "vuetify/settings" with (
+  // component specific settings
+  $menu-elevation: 2,
+  $body-font-family: $family,
+  $border-radius-root: 8px,
+  $field-outline-opacity: 1,
+  $field-input-opacity: 1,
+  $chip-font-weight: 500
+);

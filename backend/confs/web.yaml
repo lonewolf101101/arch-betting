@@ -1,0 +1,19 @@
+debug:
+  name: localhost
+  port: :8080
+  dsn: host=localhost port=5432 user=better password=OYbyaqVwF2wYgYW dbname=betting sslmode=disable
+  kafka_host: localhost:9092
+  topic: betting-system-topic
+  timezone_loc: Asia/Ulaanbaatar
+  session_secret: secret
+  storage_path: ./files
+  group_id: system-debug-group
+  google:
+    redirect_url: http://localhost:8080/pub/auth/callback
+    client_id: 486795073331-i0kg9fislmgm0kdgekak1vii44hlbkbq.apps.googleusercontent.com
+    client_secret: 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
+    scopes:
+      - https://www.googleapis.com/auth/userinfo.email
+      - https://www.googleapis.com/auth/userinfo.profile
+      - openid
+    user_info_endpoint: https://www.googleapis.com/oauth2/v2/userinfo?access_token=
